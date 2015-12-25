@@ -117,7 +117,7 @@ namespace S3
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "Scoreboard Settings Data(.auboard) | *.auboard | All Files(*.*) | *.*";
+            dialog.Filter = "Scoreboard Settings Data(.auboard)|*.auboard|All Files(*.*) | *.*";
             DialogResult result = dialog.ShowDialog();
             if (result == DialogResult.OK || result == DialogResult.Yes)
             {
@@ -131,7 +131,7 @@ namespace S3
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog dialog = new SaveFileDialog();
-            dialog.Filter = "Scoreboard Settings Data(.auboard) | *.auboard | All Files(*.*) | *.*";
+            dialog.Filter = "Scoreboard Settings Data(.auboard)|*.auboard|All Files(*.*) | *.*";
             Globals.settings.streamData = Globals.CurrentInformationUpdate;
             DialogResult result = dialog.ShowDialog();
             if (result == DialogResult.OK || result == DialogResult.Yes)
