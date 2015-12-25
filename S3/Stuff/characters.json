@@ -1,6 +1,31 @@
 {
 	"characters":
 	[
-		{"name": "Red Riding Hood", "icon":"rrh.png"}
+		{"name": "Fox", "icon":"20xx.png"},
+		{"name": "Bowser", "icon":"bowser.png"},
+		{"name": "D.K", "icon":"dong.png"},
+		{"name": "Dr. Mario", "icon":"dr.png"},
+		{"name": "Falco", "icon":"falco.png"},
+		{"name": "Falcon", "icon":"falcon.png"},
+		{"name": "Mr. Game & Watch", "icon":"gandw.png"},
+		{"name": "Ganondorf", "icon":"ganondorf.png"},
+		{"name": "Ice Climbers", "icon":"icies.png"},
+		{"name": "Jigglypuff", "icon":"jiggs.png"},
+		{"name": "Mewtwo", "icon":"king.png"},
+		{"name": "Kirby", "icon":"kirby.png"},
+		{"name": "Link", "icon":"link.png"},
+		{"name": "Luigi", "icon":"luigi.png"},
+		{"name": "Mario", "icon":"mario.png"},
+		{"name": "Marth", "icon":"marth.png"},
+		{"name": "Ness", "icon":"ness.png"},
+		{"name": "Peach", "icon":"peach.png"},
+		{"name": "Pichu", "icon":"pichu.png"},
+		{"name": "Pikachu", "icon":"pikachu.png"},
+		{"name": "Roy", "icon":"roy.png"},
+		{"name": "Samus", "icon":"samus.png"},
+		{"name": "Sheik", "icon":"sheik.png"},
+		{"name": "Yoshi", "icon":"yoshi.png"},
+		{"name": "Young Link", "icon":"younglink.png"},
+		{"name": "Zelda", "icon":"zelda.png"},
 	]
 }
