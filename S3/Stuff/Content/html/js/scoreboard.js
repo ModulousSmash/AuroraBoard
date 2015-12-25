@@ -6,6 +6,9 @@ function updateInformation()
 		$('#player2Text').text(json.Player2.name);
 		$('#player1Score').text(json.Player1.score.toString());
 		$('#player2Score').text(json.Player2.score.toString());
+		
+		$('#player1streamname').text(json.Player1.name);
+		$('#player2streamname').text(json.Player2.name);
 		$("#sponsorImgP2").attr('src', json.Player2.SponsorIcon);
 		$("#round").text(json.round);
 		$("#casterText").text(json.caster);

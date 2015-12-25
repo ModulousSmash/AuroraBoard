@@ -61,7 +61,7 @@
 .upUIR {
 	position: absolute;
 	top: 0px;
-	left: 36.5%;
+	left: 37.5%;
 }
 .microphone {
 	
@@ -115,6 +115,30 @@
 	-webkit-transform:scale(-1,1);
 	-moz-transform:scale(-1,1);
 	-o-transform:scale(-1,1)'
+
+}
+.player1StreamCamName
+{
+	position:absolute;
+	top: 260px;
+	width: 500px;
+	right: -10px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.player2StreamCamName
+{
+	position:absolute;
+	top: 545px;
+	width: 500px;
+	right: -10px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
 }
 .characterImgP1 {
 	font-family: 'Montserrat', sans-serif;
@@ -140,7 +164,7 @@
 .scoreboardContainerRight{
 	position: absolute;
 	bottom: 0px;
-	right: 516px;
+	right: 480px;
 }
 .dummy
 {
