@@ -33,24 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Griffin.Core, Version=1.0.32.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Griffin.Framework.1.0.32\lib\net45\Griffin.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Griffin.WebServer, Version=0.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Griffin.WebServer.0.5.2\lib\net40\Griffin.WebServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Magick.NET-AnyCPU, Version=7.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
       <HintPath>..\packages\Magick.NET-Q16-HDRI-AnyCPU.7.0.0.0022\lib\net40-client\Magick.NET-AnyCPU.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Magick.NET.Core, Version=7.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
       <HintPath>..\packages\Magick.NET-Q16-HDRI-AnyCPU.7.0.0.0022\lib\net40-client\Magick.NET.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Magick.NET.Web-AnyCPU, Version=7.0.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
-      <HintPath>..\packages\Magick.NET-Q16-HDRI-AnyCPU.Web.7.0.0.0022\lib\net40-client\Magick.NET.Web-AnyCPU.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Nancy, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">

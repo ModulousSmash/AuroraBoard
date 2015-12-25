@@ -10,7 +10,6 @@ namespace S3
     {
         public bool tintEnabled = false;
         public string tintColor = "#FFF";
-        public int internalPort = 5000;
         public int serverPort = 8081;
         public InformationUpdate streamData;
     }

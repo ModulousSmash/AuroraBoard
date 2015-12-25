@@ -26,7 +26,6 @@ namespace S3
                 TintingEnableCheckbox.Checked = true;
                
             }
-            internalPortBox.Value = Globals.settings.internalPort;
             ServerPortbox.Value = Globals.settings.serverPort;
             ColorTextBox.Text = Globals.settings.tintColor;
         }
@@ -45,7 +44,6 @@ namespace S3
 
         private void OkButton_Click(object sender, EventArgs e)
         {
-            Globals.settings.internalPort = Convert.ToInt32(internalPortBox.Value);
             Globals.settings.serverPort = Convert.ToInt32(ServerPortbox.Value);
             Globals.settings.tintColor = ColorTextBox.Text;
             Globals.settings.tintEnabled = TintingEnableCheckbox.Checked;

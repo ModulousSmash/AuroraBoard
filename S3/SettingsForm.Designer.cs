@@ -29,54 +29,28 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.internalPortBox = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.ServerPortbox = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ColorTextBox = new System.Windows.Forms.TextBox();
             this.TintingEnableCheckbox = new System.Windows.Forms.CheckBox();
             this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
-            this.ColorTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.internalPortBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ServerPortbox)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.internalPortBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.ServerPortbox);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(134, 73);
+            this.groupBox1.Size = new System.Drawing.Size(134, 58);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ports";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Internal Port";
-            // 
-            // internalPortBox
-            // 
-            this.internalPortBox.Location = new System.Drawing.Point(76, 44);
-            this.internalPortBox.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.internalPortBox.Name = "internalPortBox";
-            this.internalPortBox.Size = new System.Drawing.Size(52, 20);
-            this.internalPortBox.TabIndex = 3;
             // 
             // label1
             // 
@@ -103,12 +77,19 @@
             // 
             this.groupBox2.Controls.Add(this.ColorTextBox);
             this.groupBox2.Controls.Add(this.TintingEnableCheckbox);
-            this.groupBox2.Location = new System.Drawing.Point(175, 12);
+            this.groupBox2.Location = new System.Drawing.Point(152, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(97, 73);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tinting";
+            // 
+            // ColorTextBox
+            // 
+            this.ColorTextBox.Location = new System.Drawing.Point(7, 38);
+            this.ColorTextBox.Name = "ColorTextBox";
+            this.ColorTextBox.Size = new System.Drawing.Size(84, 20);
+            this.ColorTextBox.TabIndex = 1;
             // 
             // TintingEnableCheckbox
             // 
@@ -141,18 +122,11 @@
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // ColorTextBox
-            // 
-            this.ColorTextBox.Location = new System.Drawing.Point(7, 38);
-            this.ColorTextBox.Name = "ColorTextBox";
-            this.ColorTextBox.Size = new System.Drawing.Size(84, 20);
-            this.ColorTextBox.TabIndex = 1;
-            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 117);
+            this.ClientSize = new System.Drawing.Size(273, 117);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.groupBox2);
@@ -163,7 +137,6 @@
             this.Text = "SettingsForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.internalPortBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ServerPortbox)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -174,8 +147,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown internalPortBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown ServerPortbox;
         private System.Windows.Forms.GroupBox groupBox2;
