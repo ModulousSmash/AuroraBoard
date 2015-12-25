@@ -1,0 +1,16 @@
+body {
+	background: url('../img/scoreboard.png') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.Player1Text
+{
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	bottom: 0px;
+}

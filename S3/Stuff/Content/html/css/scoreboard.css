@@ -1,0 +1,161 @@
+.upLeftCharacterName {
+	position:absolute;
+	left: 0;
+	top: 0;
+}
+.upRightCharacterName {
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+.scoreboardBottomLeft {
+
+}
+.scoreboardContainerLeft
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0%;
+}
+.content {
+	font-family: 'Montserrat', sans-serif;
+	left: -5%;
+	position:absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 30px;
+	width: 100%;
+	vertical-align: middle;
+}
+.contentDownRight {
+	font-family: 'Montserrat', sans-serif;
+	left: -5%;
+	position:absolute;
+	text-align: center;
+	top: 7px;
+	color: #fff;
+	font-size: 25px;
+	width: 100%;
+	vertical-align: middle;
+}
+.contentDownRightText {
+	margin-bottom: 15px;
+}
+.contentTop {
+	font-family: 'Montserrat', sans-serif;
+	left: 0%;
+	position:absolute;
+	text-align: center;
+	top: 11px;
+	color: #fff;
+	font-size: 25px;
+	width: 100%;
+	vertical-align: middle;
+}
+.upUI {
+	position: absolute;
+	top: 0px;
+	left: 7%;
+}
+.upUIR {
+	position: absolute;
+	top: 0px;
+	left: 36.5%;
+}
+.microphone {
+	
+}
+.rightDownContainer
+{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.rightDown
+{
+	
+}
+.contentRightDown {
+	font-family: 'Montserrat', sans-serif;
+	bottom: 0;
+	position:absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 30px;
+	width: 100%;
+	vertical-align: middle;
+}
+.contentRight {
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	text-align: center;
+	top: 15px;
+	color: #fff;
+	font-size: 30px;
+	width: 100%;
+	vertical-align: middle;
+}
+.sponsorImg {
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.microphoneImage {
+	vertical-align: middle;
+	margin-bottom: 6px;
+	
+}
+.characterImgP2 {
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	top: 11px;
+	right: 2%;
+	transform:scale(-1,1);
+	-webkit-transform:scale(-1,1);
+	-moz-transform:scale(-1,1);
+	-o-transform:scale(-1,1)'
+}
+.characterImgP1 {
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	top: 11px;
+	left: 2%;
+}
+.flagImgP2 {
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	top: 22px;
+	right: 2%;
+}
+.flagImgP1 {
+	font-family: 'Montserrat', sans-serif;
+	position:absolute;
+	top: 22px;
+	left: 2%;
+}
+.scoreboardBottomRight {
+
+}
+.scoreboardContainerRight{
+	position: absolute;
+	bottom: 0px;
+	right: 516px;
+}
+.dummy
+{
+	
+}
+.sponsors {
+	position: absolute;
+	left: 250px;
+	top: 50px;
+	
+}
+body {
+	background: url('../img/scoreboardbase.png') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
