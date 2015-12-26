@@ -12,11 +12,44 @@ In the default UI there are two animated parts, the character icons that regular
 
 ## Installing
 
-Installing AuroraBoard is simple, after you download the software and run it you can fill in your data, in the settings menu you can also set the port the program uses to communicate and optionally enable the UI tinting with the HEX color you want.
+#OBS
 
-After you are done configuring the software you can save all your settings with the file menu.
+Run the program, set it up and then click start server, a URL will appear, copy it to your clipboard.
 
-Once you   hit Start Server, a URL will appear in the program, this is the URL you must point your streaming software to in order to embed the UI.
+Install the CLR Browser plugin and add the source to your scene.
+
+![](http://i.imgur.com/OffF67T.png)
+
+Make the dimensions be 1920x1080 and paste the URL that the program gives you.
+
+![](http://i.imgur.com/Z8mzZyW.png)
+
+Hit ok, and you are done.
+
+![](http://i.imgur.com/RpTZ4Dw.png)
+
+Optionally, if you are going to customize, to make testing easier enable advanced properties and disable ApplicationCache and PageCach, this will prevent OBS from caching the stream images so you can test tints and stuff.
+
+#XSplit
+Although OBS is the recommended software XSplit works too.
+
+First add the Webpage URL source.
+
+![](http://i.imgur.com/4VPl84d.png)
+
+Paste the URL that software gives you
+
+![](http://i.imgur.com/hKSOQ3l.png)
+
+Hit ok, and in the source settings disable scrollbars and set the resolution to a 1920x1080.
+
+
+
+![](http://i.imgur.com/Cnch0yY.png)
+
+And you are done.
+
+![](http://i.imgur.com/Rv6ZLwg.jpg)
 
 ## Modifying the characters, flags and player sponsors
 Character, flags and sponsors are saved in three different folders, you will find them under Content\html\img.
