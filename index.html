@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Auroraboard by ModulousSmash</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Auroraboard</h1>
+        <h2>Stream overlay software for Super Smash Brothers</h2>
+        <a href="https://github.com/ModulousSmash/AuroraBoard" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p>AuroraBoard has been mainly designed for competitive fighting games. It runs on top of your favorite streaming software that supports loading webpages, for example OBS or XSplit.
+AuroraBoard's default UI is made for presential tournaments featuring two cameras players, however this can easily be modified, the default UI is also made to be tintable, which means you can set the color of the UI from the software itself, all of this of course, can be customized without limits.</p>
+
+<p>The default UI also includes Melee stuff, including but not limited to a picture of the king of the mews.</p>
+
+<p>In the default UI there are two animated parts, the character icons that regularly change into the flag of the player and back and the lower right corner where the streamer name fades to the name of whoever is doing the commentary.</p>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><img src="http://i.imgur.com/aLwu2ka.png" alt=""></p>
+
+<p><img src="http://i.imgur.com/xuOvFzo.jpg" alt=""></p>
+
+<h2>
+<a id="installing" class="anchor" href="#installing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing</h2>
+
+<h1>
+<a id="obs" class="anchor" href="#obs" aria-hidden="true"><span class="octicon octicon-link"></span></a>OBS</h1>
+
+<p>Run the program, set it up and then click start server, a URL will appear, copy it to your clipboard.</p>
+
+<p>Install the CLR Browser plugin and add the source to your scene.</p>
+
+<p><img src="http://i.imgur.com/OffF67T.png" alt=""></p>
+
+<p>Make the dimensions be 1920x1080 and paste the URL that the program gives you.</p>
+
+<p><img src="http://i.imgur.com/Z8mzZyW.png" alt=""></p>
+
+<p>Hit ok, and you are done.</p>
+
+<p><img src="http://i.imgur.com/RpTZ4Dw.png" alt=""></p>
+
+<p>Optionally, if you are going to customize, to make testing easier enable advanced properties and disable ApplicationCache and PageCach, this will prevent OBS from caching the stream images so you can test tints and stuff.</p>
+
+<h1>
+<a id="xsplit" class="anchor" href="#xsplit" aria-hidden="true"><span class="octicon octicon-link"></span></a>XSplit</h1>
+
+<p>Although OBS is the recommended software XSplit works too.</p>
+
+<p>First add the Webpage URL source.</p>
+
+<p><img src="http://i.imgur.com/4VPl84d.png" alt=""></p>
+
+<p>Paste the URL that software gives you</p>
+
+<p><img src="http://i.imgur.com/hKSOQ3l.png" alt=""></p>
+
+<p>Hit ok, and in the source settings disable scrollbars and set the resolution to a 1920x1080.</p>
+
+<p><img src="http://i.imgur.com/Cnch0yY.png" alt=""></p>
+
+<p>And you are done.</p>
+
+<p><img src="http://i.imgur.com/Rv6ZLwg.jpg" alt=""></p>
+
+<h2>
+<a id="modifying-the-characters-flags-and-player-sponsors" class="anchor" href="#modifying-the-characters-flags-and-player-sponsors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Modifying the characters, flags and player sponsors</h2>
+
+<p>Character, flags and sponsors are saved in three different folders, you will find them under Content\html\img.</p>
+
+<p>After you add your flag to the folder you must also add it to the corresponding .json file, characters.json, flags.json or sponsors.json.</p>
+
+<h2>
+<a id="adding-your-own-sponsors-logos-etc" class="anchor" href="#adding-your-own-sponsors-logos-etc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Adding your own sponsors, logos etc...</h2>
+
+<p>Using scoreboard.psd as a base you can overlay your own logos over the stream UI, this is done by editing the file Content\img\nocolor\sponsor.png</p>
+
+<h2>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Building</h2>
+
+<p>Build  the software normally and then copy the files in the S3/Stuff folder to where the S3.exe has been compiled, this will serve as a starting point.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/ModulousSmash/AuroraBoard/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ModulousSmash/AuroraBoard/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ModulousSmash/AuroraBoard"></a> is maintained by <a href="https://github.com/ModulousSmash">ModulousSmash</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
