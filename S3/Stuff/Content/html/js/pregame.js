@@ -2,8 +2,9 @@ var pollingSpeed = 1000;//in ms
 var fadeSpeed = 3500; // in ms
 var fadeAnimationSpeed = 500;
 var informationBarSpeed = 6000;
-document.documentElement.style.overflow = 'hidden';  // firefox, chrome
-
+var enterAnimationDuration = 1000;
+var player1HasSponsor = false;
+var player2HasSponsor = false;
 function updateInformation()
 {
 	$.get('http://127.0.0.1:8081/getCurrentValues', function (json) {
@@ -27,28 +28,28 @@ function updateInformation()
 		$('#player1streamname').text(json.Player1.name);
 		$('#player2streamname').text(json.Player2.name);
 		//character images
-		$('#characterIMGP1').attr('src', "img/characters/" + json.Player1.character.icon);
-		$('#characterIMGP2').attr('src', "img/characters/" + json.Player2.character.icon);
+		$('#imgLeft').attr('src', "img/pregame/characters/" + json.Player1.character.icon);
+		$('#imgRight').attr('src', "img/pregame/characters/" + json.Player2.character.icon);
 		//flags
 		$('#flagIMGP1').attr('src', "img/flags/" + json.Player1.flag.icon);
 		$('#flagIMGP2').attr('src', "img/flags/" + json.Player2.flag.icon);
 		//hide unnecesary stuff
 		if(json.Player1.sponsor.name == 'None')
 		{
-			$('#sponsorImgP1').hide();
+			player1HasSponsor = false;
 		}
 		else
 		{
-			$('#sponsorImgP1').show();
+			player1HasSponsor = true;
 			$("#sponsorImgP1").attr('src', 'img/sponsors/' + json.Player1.sponsor.icon);
 		}
 		if(json.Player2.sponsor.name == 'None')
 		{
-			$('#sponsorImgP2').hide();
+			player2HasSponsor = false;
 		}
 		else
 		{
-			$('#sponsorImgP2').show();
+			player2HasSponsor = true;
 			$("#sponsorImgP2").attr('src', 'img/sponsors/' + json.Player2.sponsor.icon);
 		}
 	}, 'json');
@@ -94,6 +95,7 @@ function flagFades()
 		setTimeout("flagFades()", fadeSpeed);
 	}
 }
+var whiteFadeoutSpeed = 250;
 function fadeEnd()
 {
 	if(nextFade == "caster")
@@ -105,12 +107,53 @@ function fadeEnd()
 		$('#streamer').fadeIn(fadeAnimationSpeed);
 	}
 }
+function whiteFadeOut()
+{
+	$("#white").fadeOut(whiteFadeoutSpeed);
+}
+function enterAnimationEnd()
+{
+	var brightness = "brightness(100%)";
+	$("#imgLeft").css("webkitFilter", brightness);
+	$("#imgRight").css("webkitFilter", brightness);
+	var fadeInSpeed = 0;
+	var whiteFadeInSpeed = 0;
+	$("#uiLeft").fadeIn(fadeInSpeed);
+	$("#uiRight").fadeIn(fadeInSpeed);
+	$("#player1Text").fadeIn(fadeInSpeed);
+	$("#player2Text").fadeIn(fadeInSpeed);
+	if(player1HasSponsor)
+	{
+		$("#sponsorImgP1").show();
+
+		$("#sponsorImgP1").fadeIn(fadeInSpeed);
+	}
+
+	if(player2HasSponsor)
+	{
+		$("#sponsorImgP2").show();
+		$("#sponsorImgP2").fadeIn(fadeInSpeed);
+	}
+	$("#white").fadeIn(whiteFadeInSpeed);
+	$("#tournament").fadeIn(fadeInSpeed);
+	$("#round").fadeIn(fadeInSpeed);
+	setTimeout("whiteFadeOut()", whiteFadeInSpeed);
+}
 $(document).ready(function() {
 	updateInformation();
 	$('#microphone').fadeOut(0);
 	$('#flagIMGP1').fadeOut(0);
 	$('#flagIMGP2').fadeOut(0);
+	$("#sponsorImgP1").hide();
+	$("#sponsorImgP2").hide();
 	fades();
 	setTimeout("flagFades()", fadeSpeed);
-	$('#ui').fadeIn(500);
+	setTimeout("enterAnimationEnd()", enterAnimationDuration);
+	$("#uiLeft").hide();
+	$("#uiRight").hide();
+	$("#player1Text").hide();
+	$("#player2Text").hide();
+	$("#white").hide();
+	$("#tournament").hide();
+	$("#round").hide();
 });
